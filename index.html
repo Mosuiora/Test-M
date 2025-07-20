@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Monty Hall Online</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+  <h1>被験者番号を入力してね</h1>
+  <input id="pid" placeholder="例: A001" />
+  <button id="start">同意して開始</button>
+
+  <div id="game" hidden>
+    <p>ドアを１つ選んでください</p>
+    <button class="door">1</button>
+    <button class="door">2</button>
+    <button class="door">3</button>
+  </div>
+
+  <!-- JS ファイルを読み込む（必ず type="module"） -->
+  <script type="module" src="./js/firebase.js"></script>
+  <script type="module" src="./js/logic.js"></script>
+</body>
+
+</html>
